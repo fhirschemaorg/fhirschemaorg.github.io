@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FHIR schema</title>
+        <meta charset="UTF-8" />
+        <style type="text/css">
+      span.h {
+        padding-left: 0px;
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        padding-left: 10px;
+      }
+    </style>
+    </head>
+    <body>
+
+    <h1>FHIR Schema Extension </h1>
+        <hr />
+        <p vocab="http://schema.org" prefix="fhir: http://fhir.schema.org/">Default vocabulary prefix: 'fhir:'</p>
+        <p> <span property="schema:softwareVersion">fhir.schema.org Version 0.1</span> </p>
+        <hr/>
+        <h2>Classes</h2>
+        <div typeof="rdfs:Class" resource="http://fhir.schema.org/Account">
+  <span class="h" property="rdfs:label">fhir:Account</span>
+  <span property="rdfs:comment">Base StructureDefinition for Account Resource</span>
+  <span>Subclass of: <a property="rdfs:subClassOf" href="http://fhirschemaorg.github.io/DomainResource">fhir:DomainResource</a></span>
+  <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+<div typeof="rdfs:Class" resource="http://fhir.schema.org/DomainResource">
+  <span class="h" property="rdfs:label">fhir:DomainResource</span>
+  <span property="rdfs:comment">Base StructureDefinition for DomainResource Resource</span>
+  <span>Subclass of: <a property="rdfs:subClassOf" href="http://fhirschemaorg.github.io/Resource">fhir:Resource</a></span>
+  <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+</div>
+        <h2>Properties</h2>
+
+	<div typeof="rdf:Property" resource="http://fhir.schema.org/DomainResource/DomainResource.text">
+      <span class="h" property="rdfs:label">fhir:DomainResource.text</span>
+      <span property="rdfs:comment">A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://fhirschemaorg.github.io/DomainResource">fhir:DomainResource</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://fhirschemaorg.github.io/DomainResource/Narrative">Narrative</a></span>
+      <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+    </div>
+	<div typeof="rdf:Property" resource="http://fhir.schema.org/DomainResource/DomainResource.contained">
+      <span class="h" property="rdfs:label">fhir:DomainResource.contained</span>
+      <span property="rdfs:comment">These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://fhirschemaorg.github.io/DomainResource">fhir:DomainResource</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://fhirschemaorg.github.io/DomainResource/Resource">Resource</a></span>
+      <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+    </div>
+	<div typeof="rdf:Property" resource="http://fhir.schema.org/DomainResource/DomainResource.extension">
+      <span class="h" property="rdfs:label">fhir:DomainResource.extension</span>
+      <span property="rdfs:comment">May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://fhirschemaorg.github.io/DomainResource">fhir:DomainResource</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://fhirschemaorg.github.io/DomainResource/Extension">Extension</a></span>
+      <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+    </div>
+	<div typeof="rdf:Property" resource="http://fhir.schema.org/DomainResource/DomainResource.modifierExtension">
+      <span class="h" property="rdfs:label">fhir:DomainResource.modifierExtension</span>
+      <span property="rdfs:comment">May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://fhirschemaorg.github.io/DomainResource">fhir:DomainResource</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://fhirschemaorg.github.io/DomainResource/Extension">Extension</a></span>
+      <link property="http://schema.org/isPartOf" href="http://fhirschemaorg.github.io" />
+    </div>
+
+    </body>
+</html>
